@@ -4,7 +4,10 @@
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
 <!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
 <head>
   <meta charset="utf-8">
 
@@ -46,14 +49,17 @@
     <footer>
 
     </footer>
-  </div> <!--! end of #container -->
+  </div>
+  <!--! end of #container -->
 
 
   <!-- JavaScript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+  <script>
+    window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')
+  </script>
 
 
   <!-- scripts concatenated and minified via ant build script-->
@@ -61,10 +67,14 @@
   <script defer src="js/script.js"></script>
   <!-- end scripts-->
 
-	
+
   <!-- Change UA-XXXXX-X to be your site's ID -->
   <script>
-    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+    window._gaq = [
+      ['_setAccount', 'UAXXXXXXXX1'],
+      ['_trackPageview'],
+      ['_trackPageLoadTime']
+    ];
     Modernizr.load({
       load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
     });
@@ -77,6 +87,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
     <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
   <![endif]-->
-  
+
 </body>
+
 </html>
